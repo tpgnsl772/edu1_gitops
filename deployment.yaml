@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: edu1
+  name: edu2
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: edu1
+      app: edu2
   template:
     metadata:
       labels:
-        app: edu1
+        app: edu2
     spec:
       containers:
-      - name: edu1
+      - name: edu2
         image: myduhub.azurecr.io/tpgnsl772/edu1
         imagePullPolicy: Always
         ports:
