@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: edu1
+  name: edu2
   labels: # service monitor 의 selector 를 위하여 생성
-    app: edu1
+    app: edu2
 spec:
   ports:
   - port: 80
     targetPort: 8080
     name: http
   selector:
-    app: edu1
+    app: edu2
   type: ClusterIP
