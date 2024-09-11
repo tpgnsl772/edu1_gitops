@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: edu2
-        image: myduhub.azurecr.io/tpgnsl772/edu1
+        image: busybox:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
